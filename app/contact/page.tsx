@@ -30,7 +30,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Office",
-      content: "123 Healthcare Boulevard\nSan Francisco, CA 94105",
+      content: "2160 Hwy 7 Ste 6 #315Vaughan, ON Canada L4K 1W6",
       link: null,
       subtitle: null,
       gradient: "from-emerald-500 to-teal-500"

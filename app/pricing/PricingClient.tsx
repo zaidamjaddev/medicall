@@ -76,12 +76,11 @@ export default function PricingPage() {
       highlighted: false,
       gradient: "from-cyan-500 to-blue-500",
       features: [
-        "Up to 500 calls/month",
-        "Basic call answering",
-        "Appointment scheduling",
-        "Email support",
-        "Standard analytics",
-        "1 user account",
+        "AI receptionist to answer to calls",
+        "Confirmation Email of booking ",
+        "Automatic data entry in Google sheet",
+        "Calendar showing all times of meetings",
+      
       ],
     },
     {

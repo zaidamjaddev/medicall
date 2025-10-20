@@ -9,9 +9,9 @@ interface ContactFormData {
   message: string
 }
 
-export async function POST(request: NextRequest) {
+export async function POST(req: NextRequest) {
   try {
-    const body: ContactFormData = await request.json()
+    const body: ContactFormData = await req.json()
 
     if (!body.name || !body.email || !body.message) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 })
