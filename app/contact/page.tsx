@@ -14,7 +14,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      content: "hello@medicall.ai",
+      content: "steven1983@hotmail.co.uk",
       link: "mailto:hello@medicall.ai",
       subtitle: "We typically respond within 2 hours",
       gradient: "from-blue-500 to-cyan-500"
@@ -22,9 +22,9 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone",
-      content: "1-800-555-1234",
-      link: "tel:+18005551234",
-      subtitle: "Monday - Friday, 9am - 6pm EST",
+      content: "+44 7591 837043",
+      link: "",
+      subtitle: "",
       gradient: "from-indigo-500 to-purple-500"
     },
     {
