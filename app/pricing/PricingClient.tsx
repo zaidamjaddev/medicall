@@ -1,11 +1,10 @@
-"use client"
+'use client'
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { PricingCard } from "@/components/pricing-card"
 import Link from "next/link"
 
-// FAQ Item Component with Framer Motion
 const FAQItem = ({ item, index }) => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -15,18 +14,18 @@ const FAQItem = ({ item, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.05 }}
       viewport={{ once: true, margin: "-50px" }}
-      className="bg-white rounded-xl border border-slate-200 shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+      className="bg-slate-800 rounded-xl border border-slate-700 shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300"
     >
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full p-6 flex justify-between items-start gap-4 hover:bg-slate-50 transition-colors duration-200"
-        whileHover={{ backgroundColor: "rgba(248, 250, 252, 0.5)" }}
+        className="w-full p-6 flex justify-between items-start gap-4 hover:bg-slate-700 transition-colors duration-200"
+        whileHover={{ backgroundColor: "rgba(71, 85, 105, 0.5)" }}
       >
-        <h3 className="font-semibold text-slate-900 flex-1 text-left">{item.q}</h3>
+        <h3 className="font-semibold text-slate-50 flex-1 text-left">{item.q}</h3>
         <motion.div
           animate={{ rotate: isOpen ? 45 : 0 }}
           transition={{ duration: 0.3 }}
-          className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white text-sm font-bold"
+          className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center text-white text-sm font-bold"
         >
           +
         </motion.div>
@@ -39,14 +38,14 @@ const FAQItem = ({ item, index }) => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="border-t border-slate-200"
+            className="border-t border-slate-700"
           >
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3, delay: 0.1 }}
-              className="p-6 text-slate-600 leading-relaxed"
+              className="p-6 text-slate-300 leading-relaxed"
             >
               {item.a}
             </motion.p>
@@ -77,10 +76,9 @@ export default function PricingPage() {
       gradient: "from-cyan-500 to-blue-500",
       features: [
         "AI receptionist to answer to calls",
-        "Confirmation Email of booking ",
+        "Confirmation Email of booking",
         "Automatic data entry in Google sheet",
         "Calendar showing all times of meetings",
-      
       ],
     },
     {
@@ -155,44 +153,17 @@ export default function PricingPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-900">
         <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50"
+          className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
           style={{ y: scrollY * 0.3 }}
         />
-
-        {/* Animated blobs */}
-        <motion.div
-          animate={{
-            y: [0, -20, 0],
-            x: [0, 10, 0],
-          }}
-          transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY }}
-          className="absolute top-20 left-10 w-96 h-96 bg-blue-300/20 rounded-full mix-blend-multiply filter blur-3xl"
-        />
-        <motion.div
-          animate={{
-            y: [0, 20, 0],
-            x: [0, -10, 0],
-          }}
-          transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, delay: 2 }}
-          className="absolute top-40 right-10 w-96 h-96 bg-indigo-300/20 rounded-full mix-blend-multiply filter blur-3xl"
-        />
-        <motion.div
-          animate={{
-            y: [0, -15, 0],
-            x: [0, 15, 0],
-          }}
-          transition={{ duration: 12, repeat: Number.POSITIVE_INFINITY, delay: 4 }}
-          className="absolute bottom-10 left-1/2 w-96 h-96 bg-cyan-300/20 rounded-full mix-blend-multiply filter blur-3xl"
-        />
-
         <div className="relative max-w-4xl mx-auto text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6 leading-tight"
+            className="text-5xl md:text-6xl font-bold text-slate-50 mb-6 leading-tight"
           >
             Simple, Transparent Pricing
           </motion.h1>
@@ -200,7 +171,7 @@ export default function PricingPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-slate-700 mb-8 max-w-2xl mx-auto leading-relaxed"
+            className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed"
           >
             Choose the plan that fits your practice. All plans include 24/7 support and HIPAA compliance.
           </motion.p>
@@ -208,23 +179,23 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-6">
           {plans.map((plan, idx) => (
-            <PricingCard key={idx} plan={plan} index={idx} />
+            <PricingCard key={idx} plan={plan} index={idx} darkTheme />
           ))}
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
         <div className="max-w-4xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 bg-clip-text text-transparent mb-12 text-center"
+            className="text-4xl font-bold text-slate-50 mb-12 text-center"
           >
             Frequently Asked Questions
           </motion.h2>
@@ -237,41 +208,24 @@ export default function PricingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-slate-50">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            whileHover={{ y: -5 }}
-            className="relative bg-gradient-to-br from-indigo-600 via-blue-600 to-cyan-500 rounded-3xl p-12 overflow-hidden shadow-2xl"
+            className="relative bg-gradient-to-br from-indigo-600 via-blue-600 to-emerald-500 rounded-3xl p-12 overflow-hidden shadow-2xl"
           >
             <div className="absolute inset-0 bg-black/10" />
-            <div className="relative text-center">
-              <motion.h2
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-4xl font-bold text-white mb-4"
-              >
+            <div className="relative">
+              <motion.h2 className="text-4xl font-bold text-white mb-4">
                 Still have questions?
               </motion.h2>
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-lg text-blue-100 mb-8"
-              >
+              <motion.p className="text-lg text-blue-100 mb-8">
                 Our team is here to help. Schedule a call with a specialist to find the perfect plan for your practice.
               </motion.p>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
+              <motion.div whileHover={{ scale: 1.05 }}>
                 <Link
                   href="/contact"
                   className="inline-block px-8 py-4 bg-white text-indigo-700 rounded-full font-semibold hover:bg-slate-100 transition-all duration-300 shadow-lg hover:shadow-xl"

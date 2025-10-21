@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -39,44 +39,24 @@ const faqItems = [
 
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
-    },
-  },
+  visible: { opacity: 1, transition: { staggerChildren: 0.1, delayChildren: 0.2 } },
 }
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 }
 
 const accordionVariants = {
   collapsed: { opacity: 0, height: 0 },
-  expanded: {
-    opacity: 1,
-    height: "auto",
-    transition: {
-      duration: 0.3,
-      ease: "easeInOut",
-    },
-  },
+  expanded: { opacity: 1, height: "auto", transition: { duration: 0.3, ease: "easeInOut" } },
 }
 
 export default function FAQContent() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900 to-slate-800">
       <div className="max-w-4xl mx-auto">
         <motion.div
           variants={containerVariants}
@@ -89,20 +69,19 @@ export default function FAQContent() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="border border-slate-200 rounded-lg overflow-hidden hover:border-blue-300 transition-colors duration-300"
+              className="border border-slate-700 rounded-lg overflow-hidden hover:border-emerald-400/50 transition-colors duration-300"
             >
               <motion.button
                 onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
-                className="w-full px-6 py-4 flex items-center justify-between bg-slate-50 hover:bg-blue-50 transition-colors duration-300 group"
-                whileHover={{ backgroundColor: "#f0f9ff" }}
+                className="w-full px-6 py-4 flex items-center justify-between bg-slate-800 hover:bg-slate-700 transition-colors duration-300 group"
               >
-                <span className="text-lg font-semibold text-slate-900 text-left">{item.question}</span>
+                <span className="text-lg font-semibold text-slate-50 text-left">{item.question}</span>
                 <motion.div
                   animate={{ rotate: expandedIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
                   className="flex-shrink-0 ml-4"
                 >
-                  <ChevronDown className="w-5 h-5 text-blue-600 group-hover:text-blue-700" />
+                  <ChevronDown className="w-5 h-5 text-emerald-400 group-hover:text-emerald-300" />
                 </motion.div>
               </motion.button>
 
@@ -115,8 +94,8 @@ export default function FAQContent() {
                     exit="collapsed"
                     className="overflow-hidden"
                   >
-                    <div className="px-6 py-4 bg-white border-t border-slate-200">
-                      <p className="text-slate-700 leading-relaxed">{item.answer}</p>
+                    <div className="px-6 py-4 bg-slate-800 border-t border-slate-700">
+                      <p className="text-slate-300 leading-relaxed">{item.answer}</p>
                     </div>
                   </motion.div>
                 )}
