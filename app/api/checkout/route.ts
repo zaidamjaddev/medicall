@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 const PLANS: Record<string, { priceId: string; name: string }> = {
   basic_plan: { priceId: "price_1SKdOvCDEUfdDPDne4ovWyW2", name: "Basic" },
