@@ -104,19 +104,7 @@ export default function TeamPage() {
             managers, and healthcare professionals.
           </motion.p>
 
-          <motion.div
-            variants={scaleIn}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block"
-          >
-            <a
-              href="/careers"
-              className="inline-block px-8 py-4 bg-blue-500 text-white rounded-full font-semibold shadow-lg hover:bg-blue-600 hover:shadow-xl transition-all"
-            >
-              View Open Positions
-            </a>
-          </motion.div>
+          
         </motion.div>
       </section>
 
