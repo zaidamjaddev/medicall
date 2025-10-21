@@ -67,88 +67,105 @@ export default function PricingPage() {
 
   const plans = [
     {
-      name: "Starter",
-      description: "Perfect for small practices",
-      price: "$299",
+      name: "Bronze ",
+      description: "Perfect for small businesses wanting to ensure every missed call is handled professionally. Our AI answers calls instantly, captures key details, and helps you never lose another customer opportunity.",
+      price: "$1000",
       period: "/month",
-      cta: "Get Started",
+      cta: "Buy Now",
       highlighted: false,
       gradient: "from-cyan-500 to-blue-500",
       features: [
-        "AI receptionist to answer to calls",
-        "Confirmation Email of booking",
-        "Automatic data entry in Google sheet",
-        "Calendar showing all times of meetings",
+        "Missed calls automatically answered by AI",
+        
       ],
     },
     {
-      name: "Professional",
-      description: "For growing practices",
-      price: "$799",
+      name: "Silver",
+      description: "Ideal for growing teams. This plan ensures that both your calls and emails are managed efficiently by AI, keeping your communication consistent, fast, and reliable — even when your team is busy.",
+      price: "$2000",
       period: "/month",
-      cta: "Start Free Trial",
+      cta: "Buy Now",
       highlighted: true,
       gradient: "from-indigo-600 to-blue-600",
       features: [
-        "Up to 2,000 calls/month",
-        "Advanced AI conversations",
-        "Smart appointment scheduling",
-        "Priority support",
-        "Advanced analytics",
-        "Up to 5 user accounts",
-        "SMS notifications",
-        "Custom workflows",
-        "API access",
+        "Missed calls automatically answered by AI",
+        "Emails automatically responded to by AI",
+       
       ],
     },
     {
-      name: "Enterprise",
-      description: "For large organizations",
-      price: "Custom",
-      period: "pricing",
-      cta: "Contact Sales",
+      name: "Gold",
+      description: "A complete communication and content solution. This plan combines AI call handling and email automation with smart content creation — helping your brand stay active, engaging, and connected online.",
+      price: "$3000",
+      period: "/month",
+      cta: "Buy Now",
       highlighted: false,
       gradient: "from-blue-700 to-indigo-700",
       features: [
-        "Unlimited calls",
-        "Custom AI training",
-        "Multi-location support",
-        "Dedicated account manager",
-        "Custom integrations",
-        "Unlimited user accounts",
-        "Advanced security",
-        "SLA guarantee",
-        "White-label options",
+        "Missed calls automatically answered by AI",
+        "AI-powered email responses",
+        "AI-generated social media posts and blogs",
+       
+      ],
+    },
+    // 
+     {
+      name: "Platinum",
+      description: "A complete communication and content solution. This plan combines AI call handling and email automation with smart content creation — helping your brand stay active, engaging, and connected online.",
+      price: "$4000",
+      period: "/month",
+      cta: "Buy Now",
+      highlighted: false,
+      gradient: "from-blue-700 to-indigo-700",
+      features: [
+        "Missed calls automatically answered by AI",
+        "AI-powered email responses",
+        "AI-generated social media posts and blogs",
+        "AI-assisted lead generation (warm leads for your business)",
+       
+      ],
+    },
+     {
+      name: "Custom",
+      description: "Need something unique? Our Custom Automation plan is built for teams who want to take AI even further. Whether you’re looking to automate internal processes, manage complex communication flows, or connect multiple systems into one smart platform — we’ll design and build it for you.",
+      price: "$5000",
+      period: "/month",
+      cta: "Buy Now",
+      highlighted: false,
+      gradient: "from-blue-700 to-indigo-700",
+      features: [
+        "Fully tailored AI solutions designed around your business needs",
+        "Automate calls, emails, lead management, and workflows",
+        "Custom integrations with your CRM, EHR, or internal systems",
+        "Dedicated automation specialist and ongoing support",
+       
       ],
     },
   ]
+const faqs = [
+  {
+    q: "Can I change or upgrade my plan anytime?",
+    a: "Yes, you can upgrade or downgrade your plan whenever you like. We make it simple to adjust as your business grows or your automation needs change.",
+  },
+  {
+    q: "Is there a setup or onboarding fee?",
+    a: "No setup fees. All plans include fast onboarding, and our team will help you get started within 24–48 hours.",
+  },
+  {
+    q: "What if my business needs something custom?",
+    a: "Our Custom Automation plan is ideal for that. Whether you need unique AI workflows, CRM integrations, or multi-channel automation, we’ll design a solution built specifically for your business.",
+  },
+  {
+    q: "Do you offer annual or long-term discounts?",
+    a: "Currently, we offer flexible month-to-month plans with no long-term commitments. You can cancel or change your plan anytime.",
+  },
+  
+  {
+    q: "What payment methods do you accept?",
+    a: "We currently accept all payments securely through Stripe. You can pay using any major credit or debit card via our checkout system.",
+  },
+]
 
-  const faqs = [
-    {
-      q: "Can I change plans anytime?",
-      a: "Yes, you can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.",
-    },
-    {
-      q: "Is there a setup fee?",
-      a: "No setup fees. You can start using MediCall AI immediately after signing up. Professional and Enterprise plans include onboarding support.",
-    },
-    {
-      q: "What if I exceed my call limit?",
-      a: "We'll notify you when you're approaching your limit. You can upgrade anytime, or we can discuss custom limits for your needs.",
-    },
-    {
-      q: "Do you offer discounts for annual billing?",
-      a: "Yes! Annual plans receive a 20% discount. Contact our sales team for details.",
-    },
-    {
-      q: "Is there a free trial?",
-      a: "Professional and Enterprise plans include a 14-day free trial. Starter plan is available with a 7-day trial.",
-    },
-    {
-      q: "What payment methods do you accept?",
-      a: "We accept all major credit cards, ACH transfers, and wire transfers for Enterprise customers.",
-    },
-  ]
 
   return (
     <>

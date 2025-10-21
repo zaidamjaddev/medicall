@@ -21,26 +21,26 @@ export function ContactForm() {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setLoading(true)
+    // e.preventDefault()
+    // setLoading(true)
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      })
+    // try {
+    //   const response = await fetch("/api/contact", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(formData),
+    //   })
 
-      if (response.ok) {
-        setSubmitted(true)
-        setFormData({ name: "", email: "", phone: "", company: "", message: "" })
-        setTimeout(() => setSubmitted(false), 5000)
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error)
-    } finally {
-      setLoading(false)
-    }
+    //   if (response.ok) {
+    //     setSubmitted(true)
+    //     setFormData({ name: "", email: "", phone: "", company: "", message: "" })
+    //     setTimeout(() => setSubmitted(false), 5000)
+    //   }
+    // } catch (error) {
+    //   console.error("Error submitting form:", error)
+    // } finally {
+    //   setLoading(false)
+    // }
   }
 
   return (
@@ -57,7 +57,7 @@ export function ContactForm() {
           onChange={handleChange}
           required
           className="w-full px-4 py-2 rounded-lg border border-slate-700 bg-slate-800 text-slate-50 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          placeholder="Enter your name..."
+          placeholder="Enter your name"
         />
       </div>
 

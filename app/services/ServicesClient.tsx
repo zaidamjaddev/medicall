@@ -125,13 +125,13 @@ export default function ServicesPage() {
    const services = [
     {
       icon: Phone,
-      title: "24/7 Call Answering",
-      description: "AI-powered call answering that never sleeps...",
+      title: "Missed Call → AI Response",
+      description: "Never miss a client again. When you can’t pick up, our AI answers instantly — engaging your caller, capturing details, and even booking appointments. Always-on, always responsive.",
       features: [
-        "Instant answer times",
-        "Natural conversations",
-        "Multi-language support",
-        "Call recording & transcription",
+        "Instant AI call handling & conversation logging",
+        "Auto lead capture and CRM entry",
+        "Appointment scheduling integration",
+        "Smart follow-up messages via SMS or email",
       ],
       gradient: "from-blue-500 to-emerald-500",
       svg: (
@@ -150,9 +150,9 @@ export default function ServicesPage() {
     },
     {
       icon: MessageSquare,
-      title: "Appointment Scheduling",
-      description: "Automated appointment booking integrated with your calendar...",
-      features: ["Calendar integration", "Conflict detection", "Automated reminders", "Patient confirmations"],
+      title: "Smart Email Replies",
+      description: "Turn your inbox into a smart assistant. Our AI reads, understands, and replies to emails with a personal touch — keeping conversations flowing while saving you hours every week.",
+      features: ["AI-generated personalized replies", "Auto-detection of tone and intent", "Smart categorization & follow-up reminders", "Integration with Gmail, Outlook, and CRMs"],
       gradient: "from-blue-500 to-emerald-500",
       svg: (
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-40 h-40">
@@ -166,9 +166,9 @@ export default function ServicesPage() {
     },
     {
       icon: BarChart3,
-      title: "Lead Generation & Analytics",
-      description: "Convert more calls into appointments...",
-      features: ["Real-time dashboards", "Call analytics", "Lead tracking", "Performance reports"],
+      title: "AI-Powered Social Media & Blog Automation",
+      description: "Your content, on autopilot. From ideas to polished posts, our AI creates and schedules engaging blogs, captions, and updates that keep your brand active across every platform.",
+      features: ["AI content & caption generation", "Scheduled multi-platform posting", "Trend & keyword-based content ideas", "Analytics tracking for engagement insights"],
       gradient: "from-emerald-500 to-blue-500",
       svg: (
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-40 h-40">
@@ -182,9 +182,9 @@ export default function ServicesPage() {
     },
     {
       icon: MessageSquare,
-      title: "Patient Communication",
-      description: "Automated SMS and email notifications...",
-      features: ["SMS notifications", "Email campaigns", "Appointment reminders", "Follow-up sequences"],
+      title: "Automated Warm Lead Generation (Facebook Ads)",
+      description: "Stop chasing cold leads. Our system connects Facebook Ads with AI workflows to capture, qualify, and follow up with high-intent prospects — turning clicks into real conversations.",
+      features: ["Facebook Lead Ads integration", "Real-time lead capture & scoring", "Auto follow-ups via email or WhatsApp", "CRM syncing for instant sales updates"],
       gradient: "from-blue-500 to-emerald-500",
       svg: (
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-40 h-40">
@@ -198,9 +198,9 @@ export default function ServicesPage() {
     },
     {
       icon: Shield,
-      title: "HIPAA Compliance",
-      description: "Enterprise-grade security with full HIPAA compliance...",
-      features: ["End-to-end encryption", "HIPAA certified", "Data backup", "Audit logs"],
+      title: "Custom Business Automations",
+      description: "Your business, perfectly automated. We design custom n8n workflows that connect your apps, simplify your operations, and automate deal-making — built exactly for how you work.",
+      features: ["Fully tailored workflow design", "Integration with 500+ apps & APIs", "Automated deal tracking & pipeline updates", "Scalable automations for any business size"],
       gradient: "from-blue-500 to-emerald-500",
       svg: (
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-40 h-40">

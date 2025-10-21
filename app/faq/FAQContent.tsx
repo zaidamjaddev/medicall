@@ -8,34 +8,45 @@ const faqItems = [
   {
     question: "What is MediCall AI?",
     answer:
-      "MediCall AI is an advanced AI-powered call answering and marketing solution designed specifically for healthcare and dental practices. We handle patient calls, schedule appointments, and generate qualified leads while maintaining HIPAA compliance.",
+      "MediCall AI is an advanced AI automation solution built for healthcare and dental practices. It answers missed calls, responds to emails, manages social media, and even generates warm leads — all while maintaining full HIPAA compliance.",
   },
   {
     question: "How does MediCall AI handle patient privacy?",
     answer:
-      "Patient privacy is our top priority. MediCall AI is fully HIPAA compliant and uses enterprise-grade encryption to protect all patient data. We never share or sell patient information.",
+      "Patient privacy and data protection are our top priorities. MediCall AI is fully HIPAA compliant and uses enterprise-grade encryption to secure all patient and business data. We never share or sell your information.",
   },
   {
-    question: "Can MediCall AI integrate with my existing systems?",
+    question: "Can MediCall AI integrate with our existing systems?",
     answer:
-      "Yes! MediCall AI seamlessly integrates with most practice management systems, EHR platforms, and CRM tools. Our team will help ensure smooth integration with your existing workflow.",
+      "Yes. MediCall AI integrates seamlessly with most EHR, CRM, and scheduling systems. Our team assists you during setup to ensure everything works smoothly with your existing workflow.",
   },
   {
-    question: "What kind of calls can MediCall AI handle?",
+    question: "What types of automation can MediCall AI handle?",
     answer:
-      "MediCall AI can handle appointment scheduling, patient inquiries, lead qualification, follow-up calls, and general patient communication. Our AI learns your practice's specific needs and protocols.",
+      "Depending on your plan, MediCall AI can manage missed calls, respond to emails, handle social media engagement, create AI-powered blog content, and even generate warm leads for your practice.",
   },
   {
     question: "How quickly can we get started?",
     answer:
-      "Most practices are up and running within 48 hours. Our onboarding team will guide you through setup, training, and integration with your existing systems.",
+      "Most practices are fully set up and live within 48 hours. Our onboarding team walks you through configuration, testing, and integration so you can start automating right away.",
   },
   {
-    question: "What support do you provide?",
+    question: "Do you offer custom automation solutions?",
     answer:
-      "We provide 24/7 customer support, regular training sessions, performance analytics, and continuous optimization to ensure you get the best results from MediCall AI.",
+      "Yes! Our Custom Automation package is ideal for practices needing specialized AI workflows — from custom CRM integrations to tailored marketing automations designed specifically for your operations.",
+  },
+  {
+    question: "What kind of support do you provide?",
+    answer:
+      "We provide 24/7 support via chat and email, along with proactive system monitoring, performance insights, and regular optimization updates to ensure your automations keep improving.",
+  },
+  {
+    question: "How do I pay for my plan?",
+    answer:
+      "All payments are securely processed through Stripe. We offer simple month-to-month billing with no long-term contracts — upgrade, downgrade, or cancel anytime.",
   },
 ]
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
