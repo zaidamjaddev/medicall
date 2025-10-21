@@ -123,13 +123,12 @@ export default function Hero() {
   className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
 >
   {[
-    // Existing ones
+   
     { icon: Zap, title: "Smart Automation", desc: "Streamline repetitive tasks and free up time for what matters most." },
     { icon: Workflow, title: "Seamless Workflows", desc: "Integrate AI into your CRM, emails, and customer journey with ease." },
     { icon: TrendingUp, title: "Lead Generation", desc: "Convert prospects into paying customers with intelligent targeting." },
     { icon: Clock, title: "24/7 Engagement", desc: "Stay connected to your audience — even while you sleep." },
 
-    // New ones matching pricing tiers
     { icon: Phone, title: "AI Call Handling", desc: "Never miss a customer call again — AI answers instantly and professionally." },
     { icon: Mail, title: "Email Automation", desc: "Let AI respond to client emails quickly and accurately, keeping your inbox efficient." },
     { icon: Megaphone, title: "Social Media Management", desc: "Automate your posts, blogs, and content creation to keep your brand active and visible." },
@@ -164,7 +163,7 @@ export default function Hero() {
         >
           {[
             { value: <Counter end={300} suffix="+" />, label: "Businesses Automated" },
-            { value: <Counter end={1.5} suffix="M+" />, label: "Workflows Executed" },
+            { value: <Counter end={10} suffix="K+" />, label: "Workflows Executed" },
             { value: <Counter end={99} suffix="%" />, label: "Client Satisfaction" },
           ].map((stat, i) => (
             <motion.div key={i} variants={itemVariants}>
