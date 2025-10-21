@@ -84,7 +84,7 @@ export default function TeamPage() {
             variants={fadeInUp}
             className="text-xl text-slate-700 mb-8 max-w-2xl mx-auto leading-relaxed"
           >
-            Talented healthcare professionals and AI engineers working together
+            Talented healthcare professionals and working together
             to transform patient communication.
           </motion.p>
         </motion.div>
