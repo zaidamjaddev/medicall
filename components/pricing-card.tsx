@@ -1,5 +1,7 @@
+"use client"
+
+import { useState } from "react"
 import { Check } from "lucide-react"
-import Link from "next/link"
 
 interface Plan {
   name: string
@@ -16,6 +18,46 @@ interface PricingCardProps {
 }
 
 export function PricingCard({ plan }: PricingCardProps) {
+  const [loading, setLoading] = useState(false)
+
+  const handleCheckout = async () => {
+    setLoading(true)
+
+    try {
+      const planMap: Record<string, string> = {
+        Starter: "basic_plan",
+        Professional: "pro_plan",
+        Enterprise: "premium_plan",
+      }
+
+      const planId = planMap[plan.name]
+
+      if (!planId) {
+        alert("Invalid plan")
+        return
+      }
+
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ planId }),
+      })
+
+      const data = await res.json()
+
+      if (data.url) {
+        window.location.href = data.url 
+      } else {
+        alert(data.error || "Something went wrong.")
+      }
+    } catch (err) {
+      console.error("Checkout error:", err)
+      alert("Checkout failed. Please try again.")
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <div
       className={`rounded-2xl p-8 flex flex-col h-full transition-all ${
@@ -38,16 +80,17 @@ export function PricingCard({ plan }: PricingCardProps) {
         <span className="text-foreground/70 ml-2">{plan.period}</span>
       </div>
 
-      <Link
-        href="/contact"
+      <button
+        onClick={handleCheckout}
+        disabled={loading }
         className={`w-full py-3 rounded-full font-semibold transition-colors mb-8 text-center ${
           plan.highlighted
             ? "bg-primary text-primary-foreground hover:bg-primary/90"
             : "border-2 border-primary text-primary hover:bg-primary/5"
-        }`}
+        } ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
       >
-        {plan.cta}
-      </Link>
+        {loading ? "Loading..." : plan.cta}
+      </button>
 
       <div className="space-y-4 flex-1">
         {plan.features.map((feature, idx) => (
