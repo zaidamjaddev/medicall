@@ -20,7 +20,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
 
   return (
     <div className="relative p-8 rounded-xl border border-border bg-card hover:border-primary/50 transition-all hover:shadow-lg overflow-hidden">
-      {/* Animated background SVG */}
+     
       <motion.div
         className="absolute -right-8 -bottom-8 opacity-10"
         animate={{ scale: [1, 1.1, 1], rotate: [0, 5, 0] }}
