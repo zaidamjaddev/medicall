@@ -34,8 +34,8 @@ export function Footer() {
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
         <motion.div variants={itemVariants}>
-          <h3 className="font-bold text-lg mb-4">MediCall AI</h3>
-          <p className="text-slate-300 text-sm">Intelligent AI call answering for healthcare professionals.</p>
+          <h3 className="font-bold text-lg mb-4">Smart Connect4u</h3>
+          <p className="text-slate-300 text-sm">Intelligent AI call automations for healthcare professionals.</p>
         </motion.div>
 
         <motion.div variants={itemVariants}>
@@ -88,7 +88,7 @@ export function Footer() {
       </div>
 
       <motion.div variants={itemVariants} className="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
-        <p>&copy; 2025 MediCall AI. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Smart Connect4u. All rights reserved.</p>
       </motion.div>
     </motion.footer>
   )

@@ -59,7 +59,7 @@ export default function FAQPage() {
             animate="visible"
             className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed"
           >
-            Find answers to common questions about MediCall AI. Can't find what you're looking for? Contact our team.
+            Find answers to common questions about Smart Connect4u. Can't find what you're looking for? Contact our team.
           </motion.p>
         </div>
       </section>

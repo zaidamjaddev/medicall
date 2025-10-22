@@ -162,10 +162,10 @@ export default function AboutClient() {
             className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-50 via-blue-500 to-emerald-500 bg-clip-text text-transparent mb-6 leading-tight"
             variants={itemVariants}
           >
-            About MediCall AI
+            About Smart Connect4u
           </motion.h1>
           <motion.p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed" variants={itemVariants}>
-            We're on a mission to transform healthcare communication by making AI-powered call answering accessible to
+            We're on a mission to transform healthcare communication by making AI-powered  automations accessible to
             every practice.
           </motion.p>
         </motion.div>
@@ -191,7 +191,7 @@ export default function AboutClient() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              MediCall AI was founded in 2022 by healthcare professionals and AI engineers who saw a problem: thousands
+              Smart Connect4u was founded in 2022 by healthcare professionals and AI engineers who saw a problem: thousands
               of healthcare practices were losing patients because they couldn't answer calls fast enough.
             </motion.p>
             <motion.p
@@ -202,7 +202,7 @@ export default function AboutClient() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: 0.1 }}
             >
-              We built MediCall AI to solve this. Today, we help over 500 healthcare practices across the country handle
+              We built Smart Connect4u to solve this. Today, we help over 500 healthcare practices across the country handle
               millions of calls every month, converting more inquiries into appointments and revenue.
             </motion.p>
             <motion.p
@@ -351,7 +351,7 @@ export default function AboutClient() {
                 Join the Healthcare AI Revolution
               </motion.h2>
               <motion.p className="text-lg text-slate-100 mb-8" variants={itemVariants}>
-                See how MediCall AI can transform your practice. Schedule a demo with our team today.
+                See how Smart Conncet4u can transform your practice. Schedule a demo with our team today.
               </motion.p>
               <motion.div variants={itemVariants}>
                 <ContactButton />

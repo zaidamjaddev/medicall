@@ -345,7 +345,7 @@ export default function ServicesPage() {
                 viewport={{ once: true }}
                 className="text-lg text-slate-100 mb-8"
               >
-                See how MediCall AI can help you handle more calls, book more appointments, and grow your business.
+                See how Smart Connect4u can help you handle more calls, book more appointments, and grow your business.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}

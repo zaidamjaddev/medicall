@@ -6,24 +6,24 @@ import { ChevronDown } from "lucide-react"
 
 const faqItems = [
   {
-    question: "What is MediCall AI?",
+    question: "What is Smart Connect4u?",
     answer:
-      "MediCall AI is an advanced AI automation solution built for healthcare and dental practices. It answers missed calls, responds to emails, manages social media, and even generates warm leads — all while maintaining full HIPAA compliance.",
+      "Smart Conncet4u is an advanced AI automation solution built for healthcare and dental practices. It answers missed calls, responds to emails, manages social media, and even generates warm leads — all while maintaining full HIPAA compliance.",
   },
   {
-    question: "How does MediCall AI handle patient privacy?",
+    question: "How does Smart Connect4u handle patient privacy?",
     answer:
-      "Patient privacy and data protection are our top priorities. MediCall AI is fully HIPAA compliant and uses enterprise-grade encryption to secure all patient and business data. We never share or sell your information.",
+      "Patient privacy and data protection are our top priorities. Smart Connect4u is fully HIPAA compliant and uses enterprise-grade encryption to secure all patient and business data. We never share or sell your information.",
   },
   {
-    question: "Can MediCall AI integrate with our existing systems?",
+    question: "Can Smart Connect4u integrate with our existing systems?",
     answer:
-      "Yes. MediCall AI integrates seamlessly with most EHR, CRM, and scheduling systems. Our team assists you during setup to ensure everything works smoothly with your existing workflow.",
+      "Yes. Smart Connect4u integrates seamlessly with most EHR, CRM, and scheduling systems. Our team assists you during setup to ensure everything works smoothly with your existing workflow.",
   },
   {
-    question: "What types of automation can MediCall AI handle?",
+    question: "What types of automation can Smart Connect4u handle?",
     answer:
-      "Depending on your plan, MediCall AI can manage missed calls, respond to emails, handle social media engagement, create AI-powered blog content, and even generate warm leads for your practice.",
+      "Depending on your plan, Smart Connect4u can manage missed calls, respond to emails, handle social media engagement, create AI-powered blog content, and even generate warm leads for your practice.",
   },
   {
     question: "How quickly can we get started?",

@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,7 +33,7 @@ export function Navigation() {
 
   const linkVariants = {
     hidden: { opacity: 0, y: -10 },
-    visible: (i) => ({
+    visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: { delay: i * 0.05, duration: 0.4 },
@@ -66,17 +67,21 @@ export function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* --- Header Container --- */}
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* --- Logo --- */}
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#06B6D4] to-[#0891B2] rounded-lg flex items-center justify-center text-white font-bold">
-                M
+              <div className="relative w-44 h-10 md:w-52 md:h-12 flex items-center">
+                <Image
+                  src="/logo.png"
+                  alt="SmartConnect4U Logo"
+
+                  className="object-contain rounded-b-full"
+                  width={125}
+                  height={10}
+                  priority
+                />
               </div>
-              <span className="font-bold text-lg sm:text-xl md:text-2xl text-white whitespace-nowrap">
-                MediCall AI
-              </span>
             </Link>
           </motion.div>
 
