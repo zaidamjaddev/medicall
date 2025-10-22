@@ -278,14 +278,24 @@ export default function ServicesPage() {
         />
 
         <div className="relative max-w-4xl mx-auto text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-50 via-blue-500 to-emerald-500 bg-clip-text text-transparent mb-6 leading-tight"
-          >
-            Comprehensive AI Solutions for Healthcare
-          </motion.h1>
+        <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  className="
+    text-3xl sm:text-5xl md:text-5xl lg:text-6xl 
+    font-bold 
+    bg-gradient-to-r from-slate-50 via-blue-500 to-emerald-500 
+    bg-clip-text text-transparent 
+    mb-6 
+    leading-snug sm:leading-tight
+    text-center sm:text-left
+    px-4 sm:px-0
+  "
+>
+  Comprehensive AI Solutions for Healthcare
+</motion.h1>
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
